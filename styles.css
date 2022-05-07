@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html {
+
+    font-family: Comfortaa, Verdana, Helvetica, sans-serif;
+}
+
+body {
+    background-color: hsla(0, 0%, 100%, 0.9);
+    margin-top: 2.2rem; /* off set for fixed header */
+}
+
+section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+header, footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding-inline: 16px;
+}
+
+.img-container {
+    overflow: hidden;
+    border: solid #010101 thin;
+    border-radius: 6px;
+    max-height: 200px;
+    margin: auto;
+}
+
+.into {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* text styles */
+
+
+.primary-nav a {
+    text-decoration: none;
+    color: hsl(208, 100%, 97%);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: hsl(27, 100%, 85%)
+}
+
+h1, h2, h3, .logo {
+    font-family: Limelight, Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 2rem;
+    color: hsl(194, 72%, 24%);
+}
+
+h2 {
+    font-size: 1.75rem;
+    text-align: center;
+    color: hsl(194, 72%, 24%);
+}
+
+h3, .logo {
+    font-size: 1.25rem;
+}
+
+section *+* {
+    margin-top: .68rem;
+}
+
+p {
+    line-height: 1.6em;
+    text-align: center;
+}
+
+strong {
+    font-weight: 700;
+    background-color: hsl(27, 100%, 85%);
+    padding: .2em;
+    border-radius: .2em;
+}
+
+/* section colors */
+
+header, footer {
+    background-color: hsl(194, 72%, 24%);
+    color: hsl(208, 100%, 97%);
+}
+
+#Products {
+    background-color: hsl(193, 20%, 85%);
+}
+
+/* header */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+nav ul {
+    flex: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 4px;
+}
+
+
+
+/* mission section */
+
+#mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 400px;
+    background-image: url('images/averie-woodard-Wzq2WGGX1v0-unsplash.jpg');
+    background-position: bottom;
+    background-size: cover;
+}
+
+#mission .content {
+    max-width: 55%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    text-align: center;
+}
+
+@media screen and (max-width: 520px) {
+    
+    #mission {
+        align-items: center;
+        justify-content: start;
+    }
+
+    #mission .content {
+        max-width: 90%;
+    }
+}
+
+/* Products section */
+
+#Products .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: white;
+    flex-basis: 300px;
+    flex-grow: 0;
+    margin: 8px;
+    padding: 8px;
+}
+
+.product img {
+    width: 110%;
+}
+
+/* Team section */
+
+#team .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.person {
+    flex-basis: 200px;
+    flex-grow: 0;
+    margin: 8px;
+    padding: 8px;
+}
+
+.person img {
+    width: 100%;
+}
+
+/* Footer */
+
+.copyright {
+    font-weight: bold;
+    font-size: .8rem;
+}
