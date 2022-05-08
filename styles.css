@@ -12,7 +12,7 @@ html {
 
 body {
     background-color: hsla(0, 0%, 100%, 0.9);
-    margin-top: 55px; /* off set for fixed header */
+    margin-top: 30px; /* off set for fixed header */
 }
 
 section {
@@ -157,6 +157,7 @@ nav li {
 
     #mission .content {
         max-width: 90%;
+        margin-top:35px;
     }
 }
 
